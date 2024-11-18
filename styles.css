@@ -1,0 +1,173 @@
+/* general reset */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #FFFFFF; /* primary text color */
+    background-color: #2A1E4D; /* secondary background color */
+}
+
+/* reusable utility classes */
+.text-primary {
+    color: #FFFFFF; /* white text for main areas */
+}
+
+.text-secondary {
+    color: #CCCCCC; /* subtle text for subtitles or descriptions */
+}
+
+.bg-primary {
+    background-color: #482E77; /* main section background */
+}
+
+.bg-accent {
+    background-color: #1DF4FF; /* highlight areas */
+}
+
+.hover-effect {
+    transition: all 0.3s ease-in-out;
+}
+
+.hover-effect:hover {
+    color: #39D2D2; 
+}
+
+/* header styling */
+header {
+    background-color: #482E77; /* primary background color */
+    color: #FFFFFF; /* primary text color */
+    padding: 20px;
+    text-align: center;
+}
+
+/* navigation styling */
+nav ul {
+    list-style: none;
+    background: #2A1E4D; /* secondary background */
+    padding: 0;
+    text-align: center;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+nav ul li a {
+    color: #FFFFFF; /* primary text color */
+    text-decoration: none;
+    padding: 10px 15px;
+    border: 2px solid transparent;
+}
+
+nav ul li a:hover {
+    background-color: #1DF4FF; /* accent color */
+    color: #2A1E4D; 
+    border-color: #39D2D2; /* hover border accent */
+}
+
+/* footer Styling */
+footer {
+    background-color: #482E77; /* primary background */
+    color: #CCCCCC; /* secondary text color */
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* centerpiece styling */
+.centerpiece {
+    text-align: center;
+    margin: 20px auto;
+}
+
+.centerpiece img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.centerpiece .caption {
+    font-size: 1.2em;
+    color: #CCCCCC; /* secondary text color */
+    font-style: italic;
+}
+
+/* card component */
+.card {
+    background-color: #482E77; /* primary background */
+    border: 1px solid #BDB2FF; 
+    color: #FFFFFF; /* primary text color */
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    text-align: center;
+}
+
+.card h2 {
+    color: #1DF4FF; /* accent color for headings */
+}
+
+.card a {
+    color: #1DF4FF; /* if links in cards */
+    text-decoration: none;
+}
+
+.card a:hover {
+    color: #39D2D2; /* hover effect for links */
+}
+
+/* hobby section styles */
+.hobby {
+    overflow: hidden; 
+    padding: 10px;    
+}
+
+.hobby-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.hobby-gallery h2 {
+    display: none; /* hides the h2 heading visually */
+}
+
+.hobby img {
+    display: block; 
+    margin-bottom: 10px; 
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.hobby p {
+    text-align: center;
+    font-size: 1.1em;
+}
+
+/* responsiveness */
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 600px) {
+    .hobby-gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .hobby p {
+        font-size: 1em;
+    }
+}
