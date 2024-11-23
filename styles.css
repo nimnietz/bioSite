@@ -30,7 +30,7 @@ body {
 }
 
 .hover-effect:hover {
-    color: #39D2D2; 
+    color: #39D2D2;  /* hover color */
 }
 
 /* header styling */
@@ -118,7 +118,7 @@ footer {
 }
 
 .card a {
-    color: #1DF4FF; /* if links in cards */
+    color: #1DF4FF; /* for links in cards */
     text-decoration: none;
 }
 
