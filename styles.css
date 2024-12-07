@@ -72,14 +72,32 @@ nav ul li a:hover {
 
 /* footer Styling */
 footer {
-    background-color: #482E77; /* primary background */
-    color: #CCCCCC; /* secondary text color */
-    text-align: center;
-    padding: 10px 0;
+    background-color: #482E77; /* Primary background color */
+    color: #CCCCCC; /* Secondary text color */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between; /* Distribute the items across */
+    align-items: center; /* Vertically center */
     position: fixed;
     bottom: 0;
     width: 100%;
 }
+
+.footer-links a {
+    color: #1DF4FF; /* Accent color for the link */
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.footer-links a:hover {
+    color: #39D2D2; /* Hover effect for the link */
+}
+
+.footer-copy {
+    font-size: 0.9em;
+    margin-right: 33px; /* Adjust this value to shift it left */
+}
+
 
 /* centerpiece styling */
 .centerpiece {
